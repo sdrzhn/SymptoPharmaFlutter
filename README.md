@@ -1,4 +1,4 @@
-# flutter_application_1
+# SymptoPharm
 
 A new Flutter project.
 
