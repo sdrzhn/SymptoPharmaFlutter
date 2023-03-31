@@ -1,3 +1,4 @@
+// ignore_for_file: prefer_const_constructors, duplicate_ignore
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/authentications/phoneauth_screen.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
-    return MaterialApp(
+    return MaterialApp(////;
       theme: ThemeData(
         fontFamily: 'Manrope'
               ),
@@ -26,5 +27,6 @@ class MyApp extends StatelessWidget {
       routes: {
         LoginPage.id: (context) => const LoginPage(),
         PhoneAuthScreen.id:(context) => const PhoneAuthScreen(),
+        // PhoneAuthScreen.id:(context) => const PhoneAuthScreen(),
       },
     );}}

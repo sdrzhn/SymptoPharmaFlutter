@@ -7,6 +7,7 @@ import 'package:flutter_application_1/screens/authentications/otp_screen.dart';
 class PhoneAuthService {
 FirebaseAuth auth = FirebaseAuth.instance;
 
+
 Future<void>verifyPhoneNumber(BuildContext context, number)async{
   // ignore: prefer_function_declarations_over_variables
   final PhoneVerificationCompleted verificationCompleted = 
@@ -22,7 +23,7 @@ Future<void>verifyPhoneNumber(BuildContext context, number)async{
   };
 
   final PhoneCodeSent codeSent = (String verificationId, int? resendToken)async{
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>OTPScreen(number: number,)));
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>OTPScreen(number: number, verificationId: verificationId,)));
   };
 
   try{
